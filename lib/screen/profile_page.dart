@@ -1,8 +1,6 @@
-import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/data/model/tourism_place.dart';
 import 'package:travel_app/data/tourism_data.dart';
-import 'package:travel_app/data/user.dart';
 import 'package:travel_app/widget/tourism_list.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -55,8 +53,7 @@ class _ProfilePageState extends State<ProfilePage>
                         backgroundColor: Colors.white,
                         child: CircleAvatar(
                           radius: 90,
-                          backgroundImage:
-                              AssetImage('images/profile.jpg'),
+                          backgroundImage: AssetImage('images/profile.jpg'),
                         ),
                       ),
                     ],
@@ -75,7 +72,7 @@ class _ProfilePageState extends State<ProfilePage>
               height: MediaQuery.of(context).padding.top + 4,
             ),
             Text(
-              name,
+              "John Doe",
               textAlign: TextAlign.center,
               maxLines: 1,
               style: Theme.of(context)

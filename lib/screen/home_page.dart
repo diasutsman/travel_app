@@ -110,8 +110,9 @@ class _HomePageState extends State<HomePage>
             Expanded(
               child: TabBarView(
                 controller: _tabController,
-                children: myTabs.map((e) {
-                  return TourismList(list: map[e.text] as List<TourismPlace>);
+                children: myTabs.map((tab) {
+                  print("building: ${tab.text}");
+                  return TourismList(list: map[tab.text] as List<TourismPlace>);
                 }).toList(),
               ),
             )
